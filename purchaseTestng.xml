@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="eCommerce Suite">
+    <groups>
+        <run>
+            <include name="Purchase"/>
+        </run>
+    </groups>
+    <test verbose="2" preserve-order="true" thread-count="5" name="Create order">
+        <classes>
+            <class name="org.edspDeloitte.SubmitOrderTest">
+<!--                <methods>-->
+<!--                    <include name="createOrder"/>-->
+<!--                </methods>-->
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" thread-count="5" name="Error validations">
+        <classes>
+            <class name="org.edspDeloitte.ErrorValidationsTest">
+<!--                <methods>-->
+<!--                    <include name="wrongCredentialsLogin"/>-->
+<!--                    <include name="productErrorValidation"/>-->
+<!--                </methods>-->
+            </class>
+        </classes>
+    </test>
+
+</suite>
