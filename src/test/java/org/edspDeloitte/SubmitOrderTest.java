@@ -12,6 +12,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class SubmitOrderTest extends BaseTest {
+    //New comments
     String productName = "ZARA COAT 3";
     @Test(dataProvider = "getData", groups ={"Purchase"})
     //1 solution: public void createOrder(String email, String pass, String prodName) throws InterruptedException, IOException {
